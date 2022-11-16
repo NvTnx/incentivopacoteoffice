@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="favicon-32x32.png" />
+    <title>Incentivo Pacote Office</title>
+    <style>
+      body {
+          margin: 0px;
+          padding: 10px;
+          background-color: rgb(68, 183, 187);
+      }
+
+      h1 {
+          color: rgb(252, 253, 255);
+          font-family:Arial, Helvetica, sans-serif;
+          font-size: 2em;
+          font-weight: normal;
+      }
+
+      .col-lg-12 {
+          align-items: center;
+          width: 100%;
+          height: 600px;
+          position: relative;
+          display: flex;
+          justify-content: center;
+      }
+
+      a {
+          text-decoration: none;
+          display: block;
+          padding: 20px 5px;
+      }
+
+      ul {
+          list-style: none;
+      }
+
+      .zoom {
+          overflow: hidden;
+      }
+
+      .zoom img {
+          max-width: 100%;
+          -moz-transition: all 0.3s;
+          -webkit-transition: all 0.3s;
+          transition: all 0.3s;
+      }
+
+      .zoom:hover img {
+          -moz-transform: scale(1.1);
+          -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+      }
+      
+      .container-fluid{
+          background: linear-gradient(to bottom, #d38b2c 14%, #d67303 179%);
+          border: 2px solid rgb(0, 0, 0);
+          border-radius: 25px;
+      }
+      img{
+        width: 100%;
+        height: 400px;
+        padding-top: 10%;
+        display: block;
+        margin: 0px auto;
+      }
+      
+  </style>
+  </head>
+  <body>
+    <!--MENU-->
+    <nav class="navbar navbar-expand-lg">
+      <div class="container-fluid">
+          <ul class="navbar-nav me-auto my-2 my-lg-0" style="--bs-scroll-height: 100px;">
+              <h1> Incentivo Pacote Office </h1>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="index.html" style="color: white;">Inicio</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="sobre.html" style="color: white;">Sobre</a>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                      aria-expanded="false" style = "color: white;">
+                      Dropdown
+                  </a>
+                  <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="excel.html">Excel</a></li>
+                      <li><a class="dropdown-item" href="word.html">Word </a></li>
+                      <li><a class="dropdown-item" href="powerpoint.html">PowerPoint </a></li>
+                      <li><a class="dropdown-item" href="outlook.html">Outlook </a></li>
+                      <li><a class="dropdown-item" href="onedrive.html">OneDrive </a></li>
+                      
+                      
+                  </ul>
+              </li>     
+          </ul>
+          
+      </div>
+      </div>
+  </nav>
+ <!--FIM MENU-->
+    <div class="container">
+      <div class="row">
+        <div class="col-12">
+          <img
+            src="data:image/png;base64,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"
+          />
+          <br /><br />
+          <h1 style="color: white; font-family: Arial, Helvetica, sans-serif">
+            OneDrive
+          </h1>
+          <p style = "color: white; font-family: Arial, Helvetica, sans-serif;">
+            OneDrive é um serviço de armazenamento em nuvem da Microsoft. Com ele é possível armazenar, compartilhar e sincronizar qualquer arquivo, usando uma conta da Microsoft. Também é possível definir arquivos públicos, somente amigos, usuários definidos ou privados.
+          </p>
+          <h3 style="color: rgb(0, 0, 0);">Confira a aula!<br></h3>
+        </div>
+      </div>
+    </div>
+
+    <!--LISTAS-->
+    <!--1 a 3-->
+    <div class="col-md-12">
+    <div class="card-group">
+      <div class="card">
+        <div class="card-body">
+          <h5 class="card-title">Aula - One Drive</h5>
+          <p class="card-text">
+            One Drive, aula completa com dicas de Home Office e Microsoft 365 
+          </p>
+          <a href="https://www.youtube.com/watch?v=C5x8Ivv6XHU " class="btn btn-primary" target = "_blank"> Acessar </a>
+        </div>
+      </div>
+      
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
